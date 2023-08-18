@@ -8,3 +8,4 @@ echo "$PERSON1 : good morning suresh"
 echo "Good morning $PERSON1"
 echo "How aer you $PERSON2"
 echo "how are you $PERSON1"
+echo 
