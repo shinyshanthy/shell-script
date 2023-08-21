@@ -9,8 +9,8 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 
-DISK_USUAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
-DISK_USUAGE_THRESHOLD=1
+DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
+DISK_USAGE_THRESHOLD=1
 
 while IFS= read line
 do 
