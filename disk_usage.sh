@@ -19,6 +19,9 @@ do
     if [ $usage -gt $DISK_USAGE_THRESHOLD ];
     then 
         message+="HIGH DISK USAGE ON $partition: $usage \n"
+
 fi
 done <<< $DISK_USAGE
 echo -e "message: $message"
+
+echo "$message" | mail -s "Hig Disk Usage" prasanthigogu1410@gmail.com
