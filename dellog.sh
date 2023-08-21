@@ -15,3 +15,5 @@ APP_LOGS_DIR=/home/centos/app-logs
     echo "Deleting $line" &>> $LOGFILE
     rm -rf $line
 done <<< $FILES_TO_DELETE
+
+echo "$message" | mail -s "High Disk usage" prasanthigogu1407@gmail.com
